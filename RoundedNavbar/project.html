@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<br lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1{
+        text-align: center;
+        margin-top:100px;
+      }
+      .mouni{
+        /* display:flex;
+        justify-content: center;
+        align-items: center;
+        position:absolute;  */
+        margin-left:45%;
+        margin-top:20px;
+      }
+      
+      
+    </style>
+  </head>
+  
+  <h1>this is new window</h1>
+<button onclick="openNewWIndow()" class="mouni">open new window</button>
+<h1>this is the another window function on this is the way of the water</h1>
+<button class="mouni" onclick="closeNewWindow()">close the window</button>
+</br>
+<button onclick="moveWindow()" class="mouni">this is the move window</button>
+  <!-- <p class="count">clicked:0</p> -->
+    <script>
+      var ref;
+      function openNewWIndow(){
+        ref=window.open("index.html","_blank","width=400px,height=500px,left=300px,right=200px,top=350px")
+      }
+      function closeNewWindow(){
+        ref.close()
+      }
+      function moveWindow(){
+
+        ref.moveTo(900,500)
+      }
+      // let x='java script'
+      // let y=' ajaykumar'
+      // let z="    hello ajay kumar how are you man of the masses"
+      // console.log(x.charAt(0))
+      // console.log(x.indexOf('script'))
+      // console.log(x.lastIndexOf('c'))
+      // console.log(x.toUpperCase())
+      // console.log(x.toLowerCase())
+      // console.log(x.concat(y))
+      // console.log(z)
+      // console.log(z.trim())
+      // console.log(...x)
+      // console.log(x.split(' '))
+      // console.log(x.startsWith('j'))
+      // console.log(z.endsWith('s'))
+      // console.log(x.slice(1,9,2))
+      // console.log(x.includes('java',0))
+      // console.log(x.charCodeAt(1))
+      // console.log(x.replace('java','python'))
+      // console.log(x.replace(/a/g,"mouni"))
+      // console.log(Math.sign(1))
+      // console.log(Math.sign(-8))
+      // console.log(Math.sign("hello madam"))
+      // console.log(Math.abs(64))
+      // console.log(Math.sqrt(16))
+      // console.log(Math.pow(2,4))
+      // x=[20,30,40,50,60]
+      // console.log(Math.max(...x))
+      // console.log(Math.min(...x))
+      // console.log(Math.round(3.21234556))
+      // console.log(Math.ceil(34.589963))
+      // console.log(Math.floor(4.56789))
+      // console.log(Math.floor(Math.random()*10))
+    // let d1=new Date()
+    // let months=['jan','feb','mar','april','may','june','july','august']
+    // let days=['sunday','monday','tuesday','wednesday','thursday','friday','saturday']
+    // console.log(d1)
+    // console.log(days[d1.getDay()])
+    // console.log(months[d1.getMonth()])
+    // console.log(d1.getDate())
+    // console.log(d1.getFullYear())
+    // console.log(d1.getDay())
+    // console.log(d1.getHours())
+    // console.log(d1.getMilliseconds())
+    // console.log(d1.getMinutes())
+    // console.log(d1.getMonth())
+    // console.log(d1.getSeconds())
+    // console.log(d1.getTime())
+    // console.log(d1.getTimezoneOffset())
+    // console.log(d1.getUTCDate())
+    // console.log(d1.getUTCDay())
+    // console.log(d1.getUTCMonth())
+      // let employee={
+      //   name:'yaram Ajay Kumar',
+      //   emailId:"ajayyaram2000@gmail.com",
+      //   personalInfo:{
+      //     fathersName:'Yaram Babu',
+      //     MothersName:"yaram amaravathi",
+      //     Age:21,
+      //     botherName:"Yaram Akhil",
+      //     address:{
+      //       street:'ramalayam street',
+      //       village:'utukur',
+      //       mandal:'sydapuram Mandal',
+      //       district:'spsr nellore'
+      //     }
+
+      //   }
+      // }
+      // console.log(employee.name)
+      // console.log(employee.emailId);
+      // console.log(employee.personalInfo);
+      // console.log(employee.personal?.fathersName);
+      // console.log(employee.personalInfo.Age);
+      // console.log(employee.personalInfo.address.mandal);
+      // console.log(employee.village);
+  // //  "use strict";
+  //  var salary=20000;
+  //  function getSalary(a,b){
+  //   // console.log(window.salary)
+  //   console.log(this.salary)
+  //   console.log(a,b);
+  //   // console.log(salary)
+
+
+  //  }
+  //  greet: function ope(wish){
+  //   console.log(this.name,wish)
+  //  }
+  // //  getSalary()
+
+  //  var employee={
+  //   salary:30000
+  //  }
+  //  var employee2={
+  //   salary:40000
+  //  }
+  //  var employee3={
+  //   salary:50000,
+  //   name:"ajay"
+  //  }
+  
+  // //  getSalary.call(employee,56,78)
+  // //  getSalary.apply(employee2,[290,100]);
+  //  var f1=ope.bind(employee3);
+  //  f1('goodmorning');
+   
+
+
+      // function updateValue(){
+      //   let count=0
+      //   function inner(){
+      //     count=count+1
+      //     let p=document.querySelector(".count")
+      //     p.textContent=`clicked:${count}`
+      //   }
+      //   return inner
+      // }
+      // let updatecount=updateValue();
+      // console.log(updatecount)
+
+      // let count=0
+      // function updatecount(){
+      //   count=count+1
+      //   let p=document.querySelector(".count")
+      //   p.textContent=`clicked:${count}`
+      // }
+// function outer(num1){
+//   function inner(num2){
+//     console.log(num1+num2)
+//   }
+//   // inner(5)
+//   return inner
+// }
+// outer(3)
+// inner(6)
+// // res(4)
+
+   
+    </script>
+  </body>
+</html>
+<!-- var max = Math.max(...arrayOfNumbers);
+
+// For arrays with tens of thousands of items:
+let max = testArray[0];
+for (let i = 1; i < testArrayLength; ++i) {
+  if (testArray[i] > max) {
+    max = testArray[i];
+  }
+} -->

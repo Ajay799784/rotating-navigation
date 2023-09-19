@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.container {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 5px solid black;
+  background-color: aqua;
+  overflow: hidden;
+  /* width: 100%; */
+  height: 100vh;
+}
+.field {
+  font-size: 30px;
+  width: 500px;
+  height: 65px;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  margin-right: 2rem;
+}
+.field input:not(#check) {
+  display: block;
+  width: 100%;
+}
+.field label {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.header {
+  font-size: 30px;
+  text-align: center;
+}
+.mouni {
+  /* width: 500px; */
+  /* height: 500px; */
+  padding: 8px 24px;
+  border: 2px solid blue;
+  outline: red;
+}
+.ajay {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 8px 16px;
+  border: 2px solid black;
+  /* text-align: center; */
+}
+.vini {
+  text-align: center;
+  cursor: pointer;
+}
+body {
+  background-color: grey;
+}
+.field ion-icon {
+  top: 30px;
+  right: 10px;
+  position: absolute;
+  visibility: hidden;
+}
+.field small {
+  position: absolute;
+  visibility: hidden;
+}
+.field.success input {
+  border-color: green;
+}
+.field.error input {
+  border-color: red;
+}
+.field.success ion-icon.raju {
+  visibility: visible;
+}
+.field.success ion-icon.error {
+  visibility: none;
+}

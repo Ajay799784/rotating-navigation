@@ -1,0 +1,24 @@
+.navbar {
+  width: 20rem;
+  height: 20rem;
+  background-color: #ec4444;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: scale(0) rotate(-180deg);
+  transition: transform 0.5s;
+}
+
+.navbar-btn {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-color: #12c095;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
